@@ -93,38 +93,38 @@
 
 ### coupon
 
-* [`Get the total amount of the shopping cart and the use of coupons`] (https://github.com/akriger/magento-api/tree/master/api/en/coupon.md#getCouponDetail)
-* [`Use coupon coupon in shopping cart`] (https://github.com/akriger/magento-api/tree/master/api/en/coupon.md#useCoupon)
-* [`Cancel the coupon coupon in the shopping cart`] (https://github.com/akriger/magento-api/tree/master/api/en/coupon.md#removeCoupon)
+* [`Get the total amount of the shopping cart and the use of coupons`](https://github.com/akriger/magento-api/tree/master/api/en/coupon.md#getCouponDetail)
+* [`Use coupon coupon in shopping cart`](https://github.com/akriger/magento-api/tree/master/api/en/coupon.md#useCoupon)
+* [`Cancel the coupon coupon in the shopping cart`](https://github.com/akriger/magento-api/tree/master/api/en/coupon.md#removeCoupon)
 
 
 ### Payment process
 
-* [`Get the list of available billing addresses`] (https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#getBillingAddressList)
-* [`Get available distribution address list`] (https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#getShippingAddressList)
-* [`Get the current user's selected shipping address and billing address`] (https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#getQuoteAddress)
-* [`Get the current system can choose the delivery method`] (https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#getShippingMethod)
-* [`Get the current system can choose the payment method`] (https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#getPaymentMethod)
-* [`Set delivery address`] (https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#setShippingAddress)
-* [`Set billing address`] (https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#setBillingAddress)
-* [`Set delivery mode`] (https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#setShippingMethod)
-* [`Set payment method`] (https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#setPaymentMethod)
-* [`Order preview`] (https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#orderReview)
-* [`Build orders based on`] (https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#createOrder)
-* [`Generate Order Process Based on Settings`] (https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#payFlow)
-* [`Get the success of the order after the completion of the information`] (https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#getSuccessInfo)
+* [`Get the list of available billing addresses`](https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#getBillingAddressList)
+* [`Get available distribution address list`](https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#getShippingAddressList)
+* [`Get the current user's selected shipping address and billing address`](https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#getQuoteAddress)
+* [`Get the current system can choose the delivery method`](https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#getShippingMethod)
+* [`Get the current system can choose the payment method`](https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#getPaymentMethod)
+* [`Set delivery address`](https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#setShippingAddress)
+* [`Set billing address`](https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#setBillingAddress)
+* [`Set delivery mode`](https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#setShippingMethod)
+* [`Set payment method`](https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#setPaymentMethod)
+* [`Order preview`](https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#orderReview)
+* [`Build orders based on settings`](https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#createOrder)
+* [`Generate Order Process Based on Settings`](https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#payFlow)
+* [`Get the success of the order after the completion of the information`](https://github.com/akriger/magento-api/tree/master/api/en/checkout.md#getSuccessInfo)
 
 
 ### other
-* [`Get page submission FormKey`] (https://github.com/akriger/magento-api/tree/master/api/en/other.md#getFormKey)
+* [`Get page submission FormKey`](https://github.com/akriger/magento-api/tree/master/api/en/other.md#getFormKey)
 
 
 ### currency
-* [`Set default currency`] (https://github.com/akriger/magento-api/tree/master/api/en/currency.md#setCurrency)
-* [`Get the currently set currency`] (https://github.com/akriger/magento-api/tree/master/api/en/currency.md#getCurrency)
+* [`Set default currency`](https://github.com/akriger/magento-api/tree/master/api/en/currency.md#setCurrency)
+* [`Get the currently set currency`](https://github.com/akriger/magento-api/tree/master/api/en/currency.md#getCurrency)
 
 
 ### static page (the following is the static page address)
-* [`Legal - privacy statement`] (https://github.com/akriger/magento-api/tree/master/api/en/static.md#index)
-* [`Legal - clause`] (https://github.com/akriger/magento-api/tree/master/api/en/static.md#index)
-* [`Help info`] (https://github.com/akriger/magento-api/tree/master/api/en/static.md#index)
+* [`Legal - privacy statement`](https://github.com/akriger/magento-api/tree/master/api/en/static.md#index)
+* [`Legal - clause`](https://github.com/akriger/magento-api/tree/master/api/en/static.md#index)
+* [`Help info`](https://github.com/akriger/magento-api/tree/master/api/en/static.md#index)
