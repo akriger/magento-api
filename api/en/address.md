@@ -1,254 +1,254 @@
-## 用户地址
+## User address
 
 <a name="create" />
-### 添加用户地址
+### Add user address
 
-**`POST` `/mobileapi/address/create`**
+** `POST`` / mobileapi / address / create` **
 
-添加用户地址,须带`cookies`.
+Add a user address with `cookies'.
 
-**_Paramers_**
+** _ Paramers _ **
 
-* `null`
-    
-**_Form_**
+* `Null`
+    
+** _ Form _ **
 
-* `address_type`
-* `lastname`
-* `firstname`
-* `telephone`
-* `company`
-* `fax`
-* `postcode`
-* `city`
-* `address1`
-* `address2`
-* `country_id`
-* `state` - 省份
+* `Address_type`
+* `Lastname`
+* `Firstname`
+* `Telephone`
+* `Company`
+* `Fax`
+* `Postcode`
+* `City`
+* `Address1`
+* `Address2`
+* `Country_id`
+* `State` - province
 
-**_Examples_**
+** _ examples _ **
 
-```js
-/mobileapi/address/create
-    Form:  address_type=billing,shipping //是否设置默认账单和默认配送地址
-               lastname=leo
-               firstname=liew
-               telephone=13631841987
-               company=kalengo
-               fax=524521
-               postcode=123456
-               city=GuangZhou
-               address1=Yiyuan
-               address2=Street10
-               country_id=US
-               state=GUANGDONG
-```
+`` `Js
+/ Mobileapi / address / create
+    Form: address_type = billing, shipping / / whether to set the default billing and default delivery address
+               Lastname = leo
+               Firstname = liew
+               Telephone = 13631841987
+               Company = kalengo
+               Fax = 524521
+               Postcode = 123456
+               City = GuangZhou
+               Address1 = Yiyuan
+               Address2 = street10
+               Country_id = US
+               State = GUANGDONG
+`` ``
 
-**_Response_**
+** _ Response _ **
 
-```js
+`` `Js
 {
-    "code":0,
-    "msg":"save or update user address success!",
-    "model":null
+    "Code": 0,
+    "Msg": "save or update user address success!",
+    "Model": null
 }
-```
+`` ``
 
 ---------------------------------------
 
 <a name="update" />
-### 更新用户地址
+### Update the user address
 
-**`POST` `/mobileapi/address/create`**
+** `POST`` / mobileapi / address / create` **
 
-修改用户地址,须带`cookies`.
+Modify the user address, must bring `cookies`.
 
-**_Paramers_**
+** _ Paramers _ **
 
-* `null`
-    
-**_Form_**
+* `Null`
+    
+** _ Form _ **
 
-* `address_type`
-* `lastname`
-* `firstname`
-* `telephone`
-* `company`
-* `fax`
-* `postcode`
-* `city`
-* `address1`
-* `address2`
-* `country_id`
-* `state`   - 省份
-* `address_book_id` - 要更新的地址id
+* `Address_type`
+* `Lastname`
+* `Firstname`
+* `Telephone`
+* `Company`
+* `Fax`
+* `Postcode`
+* `City`
+* `Address1`
+* `Address2`
+* `Country_id`
+* `State` - province
+* `Address_book_id` - the address id to be updated
 
-**_Examples_**
+** _ examples _ **
 
-```js
-    /mobileapi/address/create
-        Form:  address_type=billing,shipping //是否设置默认账单和默认配送地址
-               lastname=leo
-               firstname=liew
-               telephone=13631841987
-               company=kalengo
-               fax=524521
-               postcode=123456
-               city=GuangZhou
-               address1=Yiyuan
-               address2=Street109
-               country_id=US
-               state=GUANGDONG
-               address_book_id=137
-```
+`` `Js
+    / Mobileapi / address / create
+        Form: address_type = billing, shipping / / whether to set the default billing and default delivery address
+               Lastname = leo
+               Firstname = liew
+               Telephone = 13631841987
+               Company = kalengo
+               Fax = 524521
+               Postcode = 123456
+               City = GuangZhou
+               Address1 = Yiyuan
+               Address2 = street109
+               Country_id = US
+               State = GUANGDONG
+               Address_book_id = 137
+`` ``
 
-**_Response_**
+** _ Response _ **
 
-```js
-    {
-        "code":0,
-        "msg":"save or update user address success!",
-        "model":null
-    }
-```
+`` `Js
+    {
+        "Code": 0,
+        "Msg": "save or update user address success!",
+        "Model": null
+    }
+`` ``
 
 ---------------------------------------
 
 <a name="getAddress" />
-### 获取用户单个地址详情
+### Get the user's single address details
 
-**`GET` `/mobileapi/address/getAddress`**
+** `GET`` / mobileapi / address / getAddress` **
 
-获取用户单个地址详情,须带上`cookies`.
+To get the user's single address details, bring `cookies`.
 
-**_Paramers_**
+** _ Paramers _ **
 
-* `address_id` - 用户地址ID
+* `Address_id` - user address ID
 
-**_Examples_**
+** _ examples _ **
 
-```js
-    /mobileapi/address/getAddress?address_id=106
-```
+`` `Js
+    / Mobileapi / address / getAddress? Address_id = 106
+`` ``
 
-**_Response_**
+** _ Response _ **
 
-```js
-    {
-        code: 0,
-        msg: "get user address success!",
-        model: {
-            entity_id: "106",
-            entity_type_id: "2",
-            name: "terry wei",
-            country: "AT",
-            attribute_set_id: "0",
-            parent_id: "137",
-            created_at: "2015-05-20T10:34:01-07:00",
-            updated_at: "2015-05-20 02:34:01",
-            is_active: "1",
-            firstname: "terry",
-            lastname: "wei",
-            company: "kalengo",
-            city: "guangzhou",
-            region: "Salzburg",
-            postcode: "002",
-            country_id: "AT",
-            telephone: "123222",
-            fax: "524521",
-            region_id: 98,
-            street: [
-                "xinhuajie"
-            ],
-            customer_id: "137",
-            is_default_billing: true,
-            is_default_shipping: true
-        }
-    }
-```
+`` `Js
+    {
+        Code: 0,
+        Msg: "get user address success!",
+        Model: {
+            Entity_id: "106",
+            Entity_type_id: "2",
+            Name: "terry wei"
+            Country: "AT",
+            Attribute_set_id: "0",
+            Parent_id: "137",
+            Created_at: "2015-05-20T10: 34: 01-07: 00",
+            Updated_at: "2015-05-20 02:34:01",
+            Is_active: "1",
+            Firstname: "terry",
+            Lastname: "wei"
+            Company: "kalengo",
+            City: "guangzhou",
+            Region: "Salzburg",
+            Postcode: "002"
+            Country_id: "AT",
+            Telephone: "123222"
+            Fax: "524521",
+            Region_id: 98,
+            Street: [
+                "Xinhuajie"
+            ],
+            Customer_id: "137",
+            Is_default_billing: true,
+            Is_default_shipping: true
+        }
+    }
+`` ``
 
 ---------------------------------------
 
 <a name="delete" />
-### 删除用户地址
+### Delete the user address
 
-**`GET` `/mobileapi/address/delete`**
+** `GET`` / mobileapi / address / delete` **
 
-删除用户地址,调用接口都须带上`cookies`.
+Delete the user address, call the interface must bring `cookies`.
 
-**_Paramers_**
+** _ Paramers _ **
 
-* `address_id` - 用户地址ID
+* `Address_id` - user address ID
 
-**_Examples_**
+** _ examples _ **
 
-```js
-    /mobileapi/address/delete?address_id=111
-```
+`` `Js
+    / Mobileapi / address / delete? Address_id = 111
+`` ``
 
-**_Response_**
+** _ Response _ **
 
-```js
-    {
-        code: 0,
-        msg: null,
-        model: true   //删除成功
-    }
-```
+`` `Js
+    {
+        Code: 0,
+        Msg: null,
+        Model: true // deleted successfully
+    }
+`` ``
 
 ---------------------------------------
 
 <a name="getAddressList" />
-### 获取用户地址列表
+### Get the user address list
 
-**`GET` `/mobileapi/address/getAddressList`**
+** `GET`` / mobileapi / address / getAddressList` **
 
-获取用户地址列表,须带上`cookies`.
+To get a list of user addresses, bring `cookies`.
 
-**_Paramers_**
+** _ Paramers _ **
 
-* `null`
+* `Null`
 
-**_Examples_**
+** _ examples _ **
 
-```js
-    /mobileapi/address/getAddressList
-```
+`` `Js
+    / Mobileapi / address / getAddressList
+`` ``
 
-**_Response_**
+** _ Response _ **
 
-```js
+`` `Js
 {
-    code: 0,
-    msg: "get user address list success!",
-    model: [
-        {
-            entity_id: "106",
-            entity_type_id: "2",
-            name: "terry wei",
-            country: "10",
-            attribute_set_id: "0",
-            parent_id: "137",
-            created_at: "2015-05-21 07:34:58",
-            updated_at: "2015-05-20 01:47:31",
-            is_active: "1",
-            firstname: "terry",
-            lastname: "wei",
-            company: "kalengo",
-            city: "guangzhou",
-            region: "Armed Forces Middle East",
-            postcode: "002",
-            country_id: "10",
-            telephone: "123222",
-            fax: "524521",
-            region_id: 5,
-            street: [
-                "xinhuajie"
-            ],
-            customer_id: "137"
-        }
-    ]
+    Code: 0,
+    Msg: "get user address list success!",
+    Model: [
+        {
+            Entity_id: "106",
+            Entity_type_id: "2",
+            Name: "terry wei"
+            Country: "10",
+            Attribute_set_id: "0",
+            Parent_id: "137",
+            Created_at: "2015-05-21 07:34:58",
+            Updated_at: "2015-05-20 01:47:31"
+            Is_active: "1",
+            Firstname: "terry",
+            Lastname: "wei"
+            Company: "kalengo",
+            City: "guangzhou",
+            Region: "Armed Forces Middle East"
+            Postcode: "002"
+            Country_id: "10",
+            Telephone: "123222"
+            Fax: "524521",
+            Region_id: 5,
+            Street: [
+                "Xinhuajie"
+            ],
+            Customer_id: "137"
+        }
+    ]
 }
-```
+`` ``
 
 ---------------------------------------
