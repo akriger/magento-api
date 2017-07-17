@@ -33,7 +33,7 @@ or download package manually:
 
 ## API 
 
-* English documentation [here](https://github.com/leoliew/magento-api/tree/master/api/en/#api-document)
+* English documentation [here](https://github.com/akriger/magento-api/tree/master/api/en/#api-document)
 * Chinese documentation [here](https://github.com/leoliew/magento-api/tree/master/api/cn/#api-文档)
 
 
